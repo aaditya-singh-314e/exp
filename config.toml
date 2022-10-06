@@ -1,0 +1,5 @@
+[jupyter]
+path = "/home/aaditya.singh/.conda/envs/jupy/bin/jupyter"
+
+[jupytext]
+path = "/home/aaditya.singh/.conda/envs/jupy/bin/jupytext"

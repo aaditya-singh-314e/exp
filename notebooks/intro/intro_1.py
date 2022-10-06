@@ -20,13 +20,23 @@ import requests
 from PIL import Image
 
 # %%
-Image.open(requests.get('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*', stream=True).raw)
+image = Image.open(requests.get('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*', stream=True).raw)
 
 # %%
 # !ls ../merge_xls/output/Combined_Payers_with_IDs.csv
 
 # %%
-print(pd.read_csv('../merge_xls/output/Combined_Payers_with_IDs.csv'))
+df = pd.read_csv('../../../../314e/merge_xls/output/Combined_Payers_with_IDs.csv')
+df.head()
+
+# %%
+df.T
+
+# %%
+df.shape
+
+# %%
+a = 2
 
 
 # %%
